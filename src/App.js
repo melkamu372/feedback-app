@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import FeedbackButtons from './FeedbackButtons';
+import Popup from './Popup';
 
 function App() {
+  const [showPopup, setShowPopup] = useState(false);
+  const [feedbackType, setFeedbackType] = useState('');
+
+  const handleButtonClick = (type) => {
+    setFeedbackType(type);
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    setFeedbackType('');
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Feedback App</h1>
+      <FeedbackButtons onClick={handleButtonClick} />
+
+      {showPopup && (
+        <Popup
+          message={`Thank you for your ${feedbackType.toLowerCase()} feedback!`}
+          onClose={handleClosePopup}
+        />
+      )}
     </div>
   );
 }
