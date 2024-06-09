@@ -1,0 +1,37 @@
+.icon {
+  font-size: 48px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Adjust the gap between icon and text */
+}
+
+.icon.good {
+  color: #7FFF00;;
+}
+
+.icon.normal {
+  color:#FFD700;
+}
+
+.icon.bad {
+  color: rgba(255, 132, 0, 0.936);
+}
+
+
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    font-size: 36px; /* Smaller size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    font-size: 24px; /* Smaller size for mobile devices */
+  }
+}
