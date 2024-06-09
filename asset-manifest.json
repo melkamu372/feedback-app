@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/melkamu372/feedback-app/static/css/main.33fbb035.css",
+    "main.js": "/melkamu372/feedback-app/static/js/main.d35021cf.js",
+    "static/js/453.ecaafee3.chunk.js": "/melkamu372/feedback-app/static/js/453.ecaafee3.chunk.js",
+    "index.html": "/melkamu372/feedback-app/index.html",
+    "main.33fbb035.css.map": "/melkamu372/feedback-app/static/css/main.33fbb035.css.map",
+    "main.d35021cf.js.map": "/melkamu372/feedback-app/static/js/main.d35021cf.js.map",
+    "453.ecaafee3.chunk.js.map": "/melkamu372/feedback-app/static/js/453.ecaafee3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33fbb035.css",
+    "static/js/main.d35021cf.js"
+  ]
+}
