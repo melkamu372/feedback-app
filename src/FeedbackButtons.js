@@ -15,9 +15,21 @@ const FeedbackButtons = () => {
     }
   };
 
+  const getGreeting = () => {
+    const currentHour = new Date().getHours();
+    console.log(currentHour);
+    if (currentHour < 12) {
+      return 'Good morning';
+    } else if (currentHour < 18) {
+      return 'Good afternoon';
+    } else {
+      return 'Good evening';
+    }
+  };
+
   return (
     <>
-      <h6>Good morning, how happy do you feel after visiting us today?</h6>
+      <h6>{getGreeting()}, how happy do you feel after visiting us today?</h6>
 
       <Row className="justify-content-center mt-3">
         <Col xs="auto" className="text-center px-6">
